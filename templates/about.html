@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block content %}
+<main class="bg-white dark:bg-gray-900">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+    <p
+      class="mb-3 text-gray-500 dark:text-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:me-3 first-letter:float-start">
+      Snacks are good. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Donec ut tincidunt diam. Nunc luctus tincidunt fringilla. Nunc ac maximus
+      augue. Aliquam sit amet pulvinar eros. Duis pellentesque id sem a lacinia.
+      Aliquam erat volutpat. Phasellus ligula mi, fermentum ut massa ut,
+      efficitur aliquet nisl. Suspendisse facilisis eget lacus sit amet pretium.
+    </p>
+    {% for paragraph in about_ps %}
+    <p class="text-gray-500 dark:text-gray-400 mb-3">{{paragraph.text}}</p>
+    {% endfor %}
+    <p class="mb-3 text-center text-gray-500 dark:text-gray-400">
+      Snacks image by <a class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+        href="https://unsplash.com/photos/a-wooden-tray-topped-with-different-types-of-food-yDfNIKD57fU" target="_blank"
+        alt="Unsplash photo">Karolina Grabowska on Unsplash</a>
+    </p>
+  </div>
+</main>
+
+{% endblock content %}
